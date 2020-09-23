@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>
+I Tried to Get Rid of Big Tech &middot; Jordan Gong&#x27;s Blog
+</title>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;blog.jordangong.com&#x2F;slim.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet'
+        type='text/css'>
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        
+<div class="header">
+    <h1 class="site-title"><a href="https:&#x2F;&#x2F;blog.jordangong.com">Jordan Gong&#x27;s Blog</a></h1>
+    <p class="site-tagline">A way to show my personal ideas.</p>
+    <div class="nav">
+        <a class="nav-btn" href="#">
+            <span class="ci ci-burger"></span>
+        </a>
+        <ul class="nav-list">
+            
+            
+            <li><a href="https:&#x2F;&#x2F;blog.jordangong.com&#x2F;tags">Tags</a></li>
+            
+            
+            <li class="spacer">&ac;</li>
+            
+            
+            <li><a href="atom.xml">Feed</a></li>
+            
+            <li><a href="https://github.com/jordangong">Github</a></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="content">
+            <div class="posts">
+                
+<div class="post">
+    
+    
+<h2 class="post-title"><a href="https:&#x2F;&#x2F;blog.jordangong.com&#x2F;i-tried-to-get-rid-of-big-tech&#x2F;">I Tried to Get Rid of Big Tech</a></h2>
+<div class="post-header">
+    <span class="post-date">September 11, 2020</span>
+    
+</div>
+
+    <div class="post-content">
+        <p>I don't trust Big Tech, especially Amazon, Apple, Alphabet, Facebook, and Microsoft. If I use their products, they want me to login with, and they can collect my data from my IP address to any keystroke I've entered. You might say, I signed up with fake information like temporary email address and random generated name, but if you use their products every day, they can collect data every day. If they collected enough data, maybe thousands of feature points, the machine learning algorithm they developed could identify you even without logging in. And from their &quot;privacy&quot; policy your data might be sold to third-parties, that means an unknown company might know you better than yourself.</p>
+<p>As I say, they <strong>can</strong> do the feature engineering I mentioned. Nobody knows what data they collect, because of their proprietary software, and I never trust their privacy policy. So, this article is about my trial to get rid of Big Tech last two months.</p>
+<p>The first thing to get rid of are proprietary operating systems. Every application need to run on top of an operating system, and the operating system has the highest privilege to control my applications and access my data. Proprietary operating systems may contain malicious functionalities like remote control by government and sending my documents to unknown servers. I'm not sure about the existence of malware, but the safest way is to avoid them.</p>
+<p>Before, I dual booted my laptop with <a href="https://ubuntu.com/">Ubuntu</a> and Windows. I used Ubuntu as my daily driver, and Windows for some software required by my school. Since I was sure I didn't need Windows then, I deleted the Windows partition and installed <a href="https://www.archlinux.org/">Arch Linux</a>. I installed Arch because I used Ubuntu before, and I think I am a Linux power user. Comparing to Ubuntu, Arch Linux is developed by community, so it's better than Canonical Ubuntu which used to contain <a href="https://www.gnu.org/philosophy/ubuntu-spyware.en.html">Amazon spyware</a> and is selling their centralized proprietary <a href="https://www.omgubuntu.co.uk/2020/02/ubuntu-snap-store-transition">Snap package manager</a>.</p>
+<p>My user experience with Arch Linux is amazing. Rolling release distributions are perfect for desktop usage comparing to stage release one like Ubuntu, because everything is cutting edge. On Arch, I don't need to do something like adding a PPA on Ubuntu in order to get the latest version. I also don't need to use other package managers like <a href="https://www.flatpak.org/">Flatpak</a> to install software neither exist in main repositories or PPAs, AUR is the game changer, I can install software from binary or source code, and I don't need to disable it when upgrade. BTW, at least for two months, my Arch Linux didn't break.</p>
+<p>Operating systems for cellphones are hard to choose. I can flash GNU/Linux to my phone with unlocked bootloader, which basically turns my phone to an Arm-based PC, but poor driver compatibility and lack of application support make it almost unusable. And yes, I choose Google's Android finally, at least it's under a free software license. Custom ROMs based on AOSP(Android Open Source Project) are easy to find, but compatibility issues are not easy solve. The ideal choice is <a href="https://grapheneos.org/">GrapheneOS</a>, a privacy and security focused Android distro(?). However, it supports Pixel devices only. Because of <a href="https://twitter.com/Snowden/status/1175430722733129729">Edward Snowden's recognition</a>, it pretty ironic that Google helps to make one of the most secure phone.</p>
+<p>Since I don't have and don't want to buy a Pixel phone, I settled on <a href="https://lineageos.org/">LineageOS</a>, which is not privacy focused but highly customizable and with well-built community. The main downside is that I can't lock the bootloader after installation, that means if I lose my phone somebody can decrypt and access my device. That's not a huge problem for me, I don't like to carry around a brick in my pocket and most of the time my phone is sitting on my desk.</p>
+<p>By default, LineageOS purged all the Google stuff, which makes some GMS dependent apps can't push notifications. Although there is project called <a href="https://microg.org/">microG</a>, a free and open-source implementation of Google Play Services on client side, to solve this problem carried by Google, I have to use Google's server. Finally, I migrate from LineageOS to <a href="https://lineage.microg.org/">LineageOS for microG</a>. The whole process is quite easy and it can keep my data. No Google Play Services also means no Google Play Store, for me, I use <a href="https://f-droid.org/">F-Droid</a> and <a href="https://f-droid.org/en/packages/com.aurora.store/">Aurora Store</a> as alternatives. Most apps I use are download from F-Droid, which contains free software only. In Aurora Store, I can download apps via Google Play Store API anonymously. I installed Aurora Store in another profile via <a href="https://f-droid.org/en/packages/net.typeblog.shelter/">Shelter</a> from F-Droid to separate file accessibility and other settings. Shelter can also freeze apps, which can prevent spyware running in the background.</p>
+<p>For someone never used stock(ish) Android before, LineageOS might not suit you, but for me everything is just better. There is no Google Play Service running in the background, no GApps that can't be uninstalled, and any other bloated or useless applications built in to the system. Battery life is much longer than before, maybe it's the benefit of removal of Google stuff, because my phone talks less to Google's server. With microG, I also haven't encountered compatibility problem yet, everything runs as before.</p>
+<p>Let's talk about software on top of operating systems.</p>
+<p>Browser might be the first software opened after logging in. I used to heavily rely on Google Chrome and its built-in sync function. For security and privacy, I shouldn't to use proprietary browser and any sync function provided by the company. Considering Chrome is a proprietary browser built Google by based on open-source project <a href="https://www.chromium.org/">Chromium</a>, I tried Chromium, but it still contains unremovable syncing services provided by Google. I also found a community-driven project called <a href="https://github.com/Eloston/ungoogled-chromium">ungoogled-chromium</a>, it deletes all Google components and does some privacy tweaks. Overall, ungoogled-chromium is pretty good according to my week-long experience, but I found a browser easier to use.</p>
+<p><a href="https://brave.com/">Brave</a> is my final choice, it's based on Chromium and block ads and trackers by default, ready to use out of the box. It's a security and privacy focused browser and cross-platform. Comparing to <a href="https://vivaldi.com/">Vivaldi</a>, a Chromium-based browser also cares about my privacy and has built-in ad blocker, Brave is free and open-source. Google stuff is removed or disabled in Brave, and I can turn off built-in extensions like cryptocurrency feature or paid ads if I don't use them. Brave provides sync function, it encrypts data on client side and sends data to a Brave-operated server, which is better than using Google servers. However, I mainly use sync function to backup my passwords, and sending passwords or even encrypted passwords to server out of my control is definitely not a secure solution. My alternative is to use an offline password manager for enhanced security other than the one built in to the browser.</p>
+<p>The password manager I use is <a href="https://keepassxc.org/">KeePassXC</a>. It's built using Qt, cross-platform and open-source. I don't recommend using any security related proprietary software like password managers and encryption software, which have potential unknown vulnerabilities to be found every month and may contain backdoors to bypass any effort we have made. Also, as I talked about earlier, I prefer to backup the password database locally or on my server, and I use 2 USB drives and self-host cloud storage for backup.</p>
+<p>As a Linux user, scripting is my life and I need a text editor to write my code. I used <a href="https://code.visualstudio.com/">Microsoft Visual Studio Code</a> before and reason is &quot;it just werks&quot;. One day, I was surprised there is a community-built <code>vscode</code> called <a href="https://vscodium.com/">VSCodium</a>, a pre-built binary from Microsoft GitHub <a href="https://github.com/Microsoft/vscode"><code>vscode</code></a> repository with telemetry is disabled, because, at the early days, I thought Visual Studio Code is free software according to Microsoft website. I was wrong, back to <a href="https://web.archive.org/web/20190502063439/https://code.visualstudio.com/">May 2nd, 2019</a>, Microsoft was using &quot;Open source.&quot; as a marketing tag to sell their product but attached <a href="https://web.archive.org/web/20190502063439/https://code.visualstudio.com/License/">a proprietary license</a> at the end of web page. After then, they changed to &quot;Built on open source.&quot;, but what decision they made before is intolerant for a free software advocate and the misleading marketing slogan impressed me that Microsoft is a fraud company. Something worse is that Microsoft don't provide binary built directly from <code>vscode</code> repository, which would indirectly let users to download the proprietary binary on their website. Because of ethical issues with Microsoft, I will not use any <code>vscode</code> fork and be skeptical about Microsoft products.</p>
+<p>Before the existence of Microsoft Visual Studio Code or <code>vscode</code>, I had used a text editor called <a href="https://atom.io/">Atom</a> for a while. It is also built on Electron and has tons of plug-ins(or as they called, packages). I switched to other editor before because of its painful launch time. But I thought, I am using a much powerful computer now, so its launch time should be okay now. I gave it a shot and it gave me a shock. It takes almost 4 seconds from start to loading up UI, and 10 more seconds later, my mouse cursor stop spinning. My laptop has an Intel H-series 6-core CPU, 32 GB of RAM, and a high performance NVME SSD. Any other Electron-based programs just start up immediately, but Atom developers don't seem to do a lot in optimizing launch time. As a hackable text editor for the 21st century, they might want users to solve the problem themselves.</p>
+<p>After seeking and thinking, I asked myself: Why I need a full-powered text editor? Could a text editor with plug-ins does the same job as well as a full-featured IDE? Why not choose something less bloated and using less resource? I just go down the Vim(<a href="https://neovim.io/">neovim</a>) rabbit hole. Fairly speaking, Vim is productive after I was used to it, which may take a lot if you can't exit. Vim-plug is a simple plug-in manager as it indicates from its name. Most Vim plug-ins intend to improve productivity, and 20+ plug-ins for Vim is easy to handle. Comparing to other Electron-based bloatware, their communities are making a text editor capable of everything like an operating system(<a href="https://www.gnu.org/software/emacs/">Emacs</a>) but slow and resource hungry. As a text editor, Vim is enough. It's fast, responsive, and has low memory usage, high customizability. Its tough learning curve for me is a challenge, but during the journey, I trained my learning skills, I formed a Vim-like thinking techniques which is quite helpful in Linux world.</p>
+<p>Web services are hard to avoid, and I need to pay some money and learn some techniques. I spend money on servers for self-host services and have to learn how to deploy and maintain them. Now I deployed 3 services: a Git server using <a href="https://gitea.io/">Gitea</a> for GitHub backup, a <a href="https://searx.me/">searx</a> metasearch instance as a Google alternative, and a <a href="https://nextcloud.com/">Nextcloud</a> instance to save small file I need to sync cross devices. Though, I said Git server is a backup, but it's more about my concern on its parent, Microsoft.</p>
+<p>With searx, I can ditch Google, Bing or any other search engines that manipulate search results based on users' tastes. If my searx instance was down, I would use <a href="https://duckduckgo.com/">DuckDuckGo</a>, privacy focused but not accurate enough sometimes.</p>
+<p>Nextcloud is a really powerful platform more than cloud storage. I can deploy LibreOffice online, like Microsoft Office with OneDrive. However, I don't like using Software as a Service, a software need Internet to run, and my Nextcloud instance don't have enough memory to handle it. I also have less storage space if I spend the same money on Google Drive or Microsoft OneDrive, but I prefer to do local backup other than send all my files to server far away from me. It's enough for me to sync my password database and RSS feed list.</p>
+<p>I intended to deploy mail server as well, but mail services are complicated if I want it secure enough. Many people recommend <a href="https://protonmail.com/">ProtonMail</a> as a Gmail or Hotmail alternative, which is end-to-end encrypted, open-source(both server and client), based in Switzerland other than in Five-Eyes country. ProtonMail does what a mail provider should do and works fine. With free tier account, I have 500 MB storage and 150 mails per day, which is not a lot comparing to big companies' ones. Because of end-to-end encryption, I can't add ProtonMail to mail client directly. I need to install <a href="https://protonmail.com/bridge/">ProtonMail Bridge</a> to encrypt and decrypt my mail, but it's paid only feature and not cheap(at least 5 USD per month). That might be something to sacrifice, if I want privacy and convenience at the same time, that will cost me a lot.</p>
+<p>That's about I have done. But, big companies are everywhere, without them I am literally another Richard Stallman or Edward Snowden.</p>
+<p>If you ask people care about their privacy what browser do they use, the answer would be <a href="https://www.mozilla.org/en-US/firefox/">Mozilla Firefox</a> with privacy tweaks, even <a href="https://www.gnu.org/software/gnuzilla/">GNU IceCat</a> or <a href="https://www.torproject.org/">Tor Browser</a>. All of above are Firefox or based on Firefox. I definitely have Firefox installed on my computer, because I need it to do compatibility test before production. But not every web developer would test their website in Firefox, that means some website might not work well when it opened in Firefox. Further, I tweaked a lot on <a href="https://www.dpreview.com/forums/thread/4051604">Firefox color management</a>, but it seems not work in video on my computer. Firefox's hardware video acceleration also has <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1645671">some bugs</a> at least on X11. I'm not sure it works well in <a href="https://wayland.freedesktop.org/">Wayland</a>, since <a href="https://www.gnome.org/">GNOME</a> in Wayland is incompatible with <a href="https://github.com/Askannz/optimus-manager">optimus-manager</a>. All in all, I'm still using a Chromium-based browser by default.</p>
+<p>And here is more Google stuff, Android and YouTube. There is no other usable open-source alternative if I have to use a smartphone. Though I don't like proprietary instant messaging apps for mobile only, I have no choice. My family members, friends, or other people who want to contact with me use them, and I can't ask them to contact me using specific program. If I didn't have a cellphone like Richard Stallman, I would be a strange guy for people around me.</p>
+<p>I also can't leave YouTube, it for me is more than an entertaining website, because I have fetched plenty knowledge and information from it as a learning platform. <a href="https://peer.tube/">PeerTube</a>, <a href="https://lbry.com/">LBRY</a> or other decentralized alternatives give more freedom to users, but content diversity they delivered are far away comparing to YouTube. People choosing these platform for freedom, and in videos they uploaded they would also talk more about philosophy, politics and humanity. I don't want everyone to be homogeneous, and I am always finding and trying something different, even watching useless videos on YouTube trending then thinking about the reason it succeeded.</p>
+<p>I also have some hardware can't be thrown away, an Amazon Kindle and an iPad. Amazon fairly dominate the e-book market using its power in online book selling. I can hardly get both E-ink display and large book market at the same time. iPad is the only tablet I can buy, considering the crappy app support on Android tablets. Apple locks the bootloader on every device except Macs, so I can't load other operating systems.</p>
+<p>Big Tech are controlling the Internet. When I enter or write a website, it's inevitable to load or use some JavaScript libraries like <a href="https://reactjs.org/">React</a> by Facebook and <a href="https://angular.io/">Angular</a> by Google. <a href="https://aws.amazon.com/">Amazon</a>, <a href="https://azure.microsoft.com/">Microsoft</a> and <a href="https://cloud.google.com/">Google</a> also takes most part of market share in cloud computing, I can't refuse to access someone's website because of using their servers. Some programming languages they made, like <a href="https://golang.org/">Go</a> by Google, <a href="https://www.typescriptlang.org/">TypeScript</a> by Microsoft, are very popular in developer world.</p>
+<p>They use the word &quot;open-source&quot; against free software. They want elites around the world to improve their code quality. They don't need to care about users' freedom because they don't have to. They provide fancy features in their products to catch normies' eyes. They are the devils for me, but they are also angles for somebody. I want to ditch them but I can't.</p>
+
+    </div>
+    
+</div>
+
+            </div>
+            
+        </div>
+        
+<div class="footer">
+    
+    <p>Powered by <a href="https://getzola.org">Zola</a></p>
+    
+</div>
+
+    </div>
+    <script src="https:&#x2F;&#x2F;blog.jordangong.com&#x2F;js&#x2F;slim.js"></script>
+    
+</body>
+
+</html>
